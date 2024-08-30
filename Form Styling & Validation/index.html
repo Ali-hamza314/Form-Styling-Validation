@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="border">
+        <div class="top">
+            <img src="startae-team-7tXA8xwe4W4-unsplash.jpg" alt="Consultation">
+            <div class="top-text">
+                <h1>Consultation Form</h1>
+                <p>Fill in desired consultation details, date and time, so that we can schedulea meeting with you at our
+                    company headquarters.</p>
+            </div>
+        </div>
+        <form class="form">
+            <div class="box">
+                <div class="left">
+                    <label for="Name">Full Name:</label>
+                    <input id="first_name" type="text" placeholder="First" name="Name">
+
+                    <label for="Phone_no">Phone number:</label>
+                    <input id="Phone_no" type="text" name="Phone_no" placeholder="+01-123-456-7890">
+
+                    <label for="Organization">Company or organization name:</label>
+                    <input type="text" name="organization" id="organization" placeholder="ACME Ltd.">
+                </div>
+                <div class="right">
+                    <label for="" style="color: white;">.</label>
+                    <input id="last_name" type="text" placeholder="Last" name="Name">
+
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="Email" placeholder="abc@example.com">
+
+                    <label for="Consultation_interest">Consultation Interest</label>
+                    <select name="Consultation_interest" id="Consultation_interest">
+                        <option value="please_select">Please Select</option>
+                        <option value="network">Network Solutions</option>
+                        <option value="hosting">Hosting Solutions</option>
+                        <option value="business">Business Solutions</option>
+                        <option value="procurement">Procurment</option>
+                        <option value="web">Web design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div> <label for="information">Additional information/comments</label>
+                <textarea name="information" id="information"></textarea>
+                <h2 class="margin-top">Desired date and time for consultation</h2>
+            </div>
+
+            <div class="box">
+                <div class="left">
+                    <label for="from_date">From Date</label>
+                    <input type="date" name="from_date" id="from_date">
+
+                    <label for="to_date">To Date</label>
+                    <input type="date" name="to_date" id="to_date">
+                </div>
+                <div class="right">
+                    <label for="from_time">From Time</label>
+                    <input type="time" name="from_time" id="from_time">
+
+                    <label for="to_time">To Time</label>
+                    <input type="time" name="to_time" id="to_time">
+                </div>
+            </div>
+
+            <button class="btn" type="submit">Book Consultation</button>
+            <div class="feedback">
+                <div id="error-message" style="color: red;"></div>
+                <div id="success-message" style="color: green;"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
